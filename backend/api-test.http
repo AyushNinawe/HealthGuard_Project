@@ -1,0 +1,364 @@
+### Update Claim
+PUT http://localhost:5001/api/claims/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk4MjY0LCJleHAiOjE3ODYyODQ2NjR9.GXDsc6KG2irzNmKkCCMzDlaAfBMN-zadtMKy8WdTxow
+Content-Type: application/json
+
+{
+  "policy_id": 3,
+  "claim_amount": 30000.00,
+  "claim_type": "Medical",
+  "hospital_name": "Updated City Care Hospital",
+  "vehicle_number": null,
+  "vehicle_age": null,
+  "police_report": 1,
+  "incident_date": "2026-08-01",
+  "incident_location": "Pune",
+  "description": "Updated medical insurance claim details."
+}
+
+POST http://localhost:5001/api/claims/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MjAwNDIzLCJleHAiOjE3ODYyODY4MjN9.M1RwdT1A0q7wSkZfz_ov5tUboCDI3xCL8OfMLf99yFg
+
+{
+    "claim_amount": 125000,
+    "claim_type": "Medical",
+    "hospital_name": "AIIMS",
+    "vehicle_age": 5,
+    "police_report": 1,
+    "incident_location": "Raipur",
+    "claim_status": "Pending"
+}
+
+GET http://localhost:5001/api/documents/claim/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk4MjY0LCJleHAiOjE3ODYyODQ2NjR9.GXDsc6KG2irzNmKkCCMzDlaAfBMN-zadtMKy8WdTxow
+
+
+DELETE http://localhost:5001/api/claims/:3
+
+### Update Claim
+# PUT http://localhost:5001/api/claims/3
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+# Content-Type: application/json
+
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk4MjY0LCJleHAiOjE3ODYyODQ2NjR9.GXDsc6KG2irzNmKkCCMzDlaAfBMN-zadtMKy8WdTxow
+
+### Delete Claim
+DELETE http://localhost:5001/api/claims/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+# {
+#   "policy_id": 1,
+#   "claim_amount": 10000.00,
+#   "claim_type": "Medical",
+#   "hospital_name": "Updated City Care Hospital",
+#   "vehicle_number": null,
+#   "vehicle_age": null,
+#   "police_report": 1,
+#   "incident_date": "2026-08-01",
+#   "incident_location": "Pune",
+#   "description": "Updated medical insurance claim details."
+# }
+
+
+
+### Upload Document
+POST http://localhost:5001/api/documents/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+
+
+
+
+
+
+
+
+### Upload Medical Bill
+
+### Upload Medical Report
+
+POST http://localhost:5001/api/documents/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary123456
+
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="claim_id"
+
+2
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="document_type"
+
+medical_bill
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="document"; filename="kkk.pdf"
+Content-Type: application/pdf
+
+< ./kkk.pdf
+------WebKitFormBoundary123456--
+
+
+
+
+
+
+
+
+
+
+
+
+# ### Check JWT Token / Profile
+# GET http://localhost:5001/api/auth/profile
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+
+
+
+
+
+
+
+
+
+
+POST http://localhost:5001/api/documents/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+
+GET http://localhost:5001/api/documents/claim/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+
+
+GET http://localhost:5001/api/documents/claim/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJlbWFpbCI6InRlc3R1c2VyMjAyNkBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg1ODQzMDA5LCJleHAiOjE3ODU5Mjk0MDl9.3C1JP7g4pUHBm8xuoKueycrQ567Njd4NuqSUEWZpt5w
+
+POST http://localhost:5001/api/auth/login
+
+POST http://localhost:5001/api/predictions/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk4MjY0LCJleHAiOjE3ODYyODQ2NjR9.GXDsc6KG2irzNmKkCCMzDlaAfBMN-zadtMKy8WdTxow
+
+# register an new user 
+# {}
+# POST http://localhost:5001/api/auth/register
+# Content-Type: application/json
+
+# {
+#     "full_name":"ayushninawe",
+#     "email": "ayush@gmail.com",
+#     "password": "123456"
+# }
+# }
+
+
+POST http://localhost:5001/api/auth/login
+Content-Type: application/json
+{
+#   "full_name":"ayushninawe",
+#     "email": "ayush@gmail.com",
+#     "password": "123456"
+}
+
+POST http://localhost:5001/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ayush@gmail.com",
+  "password": "123456"
+}
+
+GET http://localhost:5001/api/health
+
+POST http://localhost:5001/api/predictions/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MjAxNTY2LCJleHAiOjE3ODYyODc5NjZ9.-fE4svTVcJ8FIYFe-MGe4f1zfo9U5SxozNjDZtcf3QE
+
+
+GET http://localhost:5001/api/predictions/5
+Authorization: Bearer YOUR_JWT_TOKEN
+
+GET http://localhost:5001/api/predictions/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MjAxNTY2LCJleHAiOjE3ODYyODc5NjZ9.-fE4svTVcJ8FIYFe-MGe4f1zfo9U5SxozNjDZtcf3QE
+
+
+
+
+POST http://localhost:5001/api/predictions/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk5ODk4LCJleHAiOjE3ODYyODYyOTh9.-OuRP9em27MYTr4D5jxbVSn3uGAiQGdJdjh3oXHW4D0
+
+
+
+SHOW CREATE TABLE claims;
+
+
+GET http://localhost:5001/api/health
+
+POST http://localhost:5001/api/claims
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg2MTk5MTM0LCJleHAiOjE3ODYyODU1MzR9.o84LkC2MYRbpNpbAqtG6iJZKXSvAAWuhntwT1RlnSF8
+
+{
+  "policy_id": 1,
+  "claim_amount": 125000
+}
+
+
+
+
+
+
+
+GET http://localhost:5001/api/admin/claims
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUyODg4NCwiZXhwIjoxNzg2NjE1Mjg0fQ.qM2C7f_XTVpE9wUp9lQrrryuiJM-TRiOGGlmBdzBouc
+
+GET http://localhost:5001/api/admin/claims/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjI4MTc2MywiZXhwIjoxNzg2MzY4MTYzfQ.kJdb500AeTk6otvKjhxwSzP1XaaH1lde-pNLA9RTRIk
+
+PATCH http://localhost:5001/api/admin/claims/5/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjI4NTUyNywiZXhwIjoxNzg2MzcxOTI3fQ.tKvlFeLlr_YheCZ4QUsjMF-fVenS3zWilPURcDMXCKs
+Content-Type: application/json
+{
+    "Status": "approved"
+}
+
+PATCH http://localhost:5001/api/admin/claims/5/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjI4NTUyNywiZXhwIjoxNzg2MzcxOTI3fQ.tKvlFeLlr_YheCZ4QUsjMF-fVenS3zWilPURcDMXCKs
+Content-Type: application/json
+
+{
+    "status": "approved"
+}
+
+
+PATCH http://localhost:5001/api/admin/claims/5/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjI4NTAyMiwiZXhwIjoxNzg2MzcxNDIyfQ.69ZkIafdEbkQISDLXbqbbghfU2_Ncph14uiD4U8dg-c
+
+{
+    "status": "approved"
+}
+
+
+
+
+POST http://localhost:5001/api/admin/test-audit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUyODAxNCwiZXhwIjoxNzg2NjE0NDE0fQ.K26iBMJaCk9j9WJqW1-I3-lHadqcANWRLY_Zb-BsDms
+Content-Type: application/json
+
+{
+  "claimId": 5,
+  "action": "TEST_AUDIT",
+  "oldStatus": "pending",
+  "newStatus": "approved",
+  "description": "Testing audit controller."
+}
+
+
+
+
+
+
+
+
+
+GET http://localhost:5001/api/admin/dashboard
+
+### Phase 9 — Blockchain integrity API (admin JWT required)
+### Store Claim Hash
+POST http://localhost:5001/api/blockchain/claims/8/store
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+Content-Type: application/json
+
+{}
+
+### Verify Claim Hash
+GET http://localhost:5001/api/blockchain/claims/8/verify
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+
+### Get Claim Blockchain Record
+GET http://localhost:5001/api/blockchain/claims/8
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+
+### Store Prediction Hash (prediction ID, not claim ID)
+POST http://localhost:5001/api/blockchain/predictions/3/store
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+Content-Type: application/json
+
+{}
+
+### Verify Prediction Hash
+GET http://localhost:5001/api/blockchain/predictions/3/verify
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+
+### Get Prediction Blockchain Record
+GET http://localhost:5001/api/blockchain/predictions/3
+Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjI5Nzc0OCwiZXhwIjoxNzg2Mzg0MTQ4fQ.1hRdmH7riYHIx2Gz5hmk22Z1lnIBW2Vk6TY57DmCxf8
+
+
+POST http://localhost:5001/api/predictions/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUyODg4NCwiZXhwIjoxNzg2NjE1Mjg0fQ.qM2C7f_XTVpE9wUp9lQrrryuiJM-TRiOGGlmBdzBouc
+Content-Type: application/json
+
+{}
+
+
+
+
+
+
+
+POST http://localhost:5001/api/claims/predictions/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUyODg4NCwiZXhwIjoxNzg2NjE1Mjg0fQ.qM2C7f_XTVpE9wUp9lQrrryuiJM-TRiOGGlmBdzBouc
+Content-Type: application/json
+
+{
+  "success": true,
+  "message": "Fraud prediction completed and saved successfully.",
+  "prediction_id": 2,
+  "claim_id": "8",
+  "prediction": "Genuine",
+  "fraud_score": 4,
+  "risk_level": "Low",
+  "confidence": 96
+}
+
+
+
+
+POST http://localhost:5001/api/claims
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUyODg4NCwiZXhwIjoxNzg2NjE1Mjg0fQ.qM2C7f_XTVpE9wUp9lQrrryuiJM-TRiOGGlmBdzBouc
+Content-Type: application/json
+
+{
+    "policy_id": 1,
+    "claim_amount": 75000,
+    "claim_type": "Medical",
+    "hospital_name": "AIIMS",
+    "vehicle_number": null,
+    "vehicle_age": null,
+    "police_report": 0,
+    "incident_date": "2026-08-12",
+    "incident_location": "Raipur",
+    "description": "Testing claim creation audit logging."
+}
+
+GET http://localhost:5001/api/admin/claims/8/audit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUzNDc5OCwiZXhwIjoxNzg2NjIxMTk4fQ.Rdv0QUkMT-MXoM03RfSjfQCiUnvsjdFmXXeAQNZcYmQ
+Content-Type: application/json
+
+{}
+
+
+
+PATCH http://localhost:5001/api/admin/claims/8/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImF5dXNoQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4NjUzNDE0MywiZXhwIjoxNzg2NjIwNTQzfQ.D0mrF30XxcfJL8iOfsfw4ZO4lwtoFqy26ndK_SZHJeE
+Content-Type: application/json
+
+{
+    "status": "approved"
+}
+
+
+
+
+
+
+
+

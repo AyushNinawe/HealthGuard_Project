@@ -1,0 +1,52 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":           "node server.cjs",
+    "dev":             "nodemon server.cjs",
+    "compile":         "hardhat compile",
+    "node":                    "hardhat node",
+    "deploy:localhost":        "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:ignition:localhost": "hardhat ignition deploy ignition/modules/InsuranceFraudRegistry.ts --network localhost",
+    "deploy:local":            "hardhat ignition deploy ignition/modules/InsuranceFraudRegistry.ts --network hardhatMainnet",
+    "deploy:sepolia":            "hardhat ignition deploy ignition/modules/InsuranceFraudRegistry.ts --network sepolia",
+    "deploy:script":             "hardhat run scripts/deploy.ts --network hardhatMainnet",
+    "test:contracts":  "hardhat test",
+    "ignition:status": "hardhat ignition status InsuranceFraudRegistryModule",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.19.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.17.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "mysql2": "^3.23.2",
+    "node.js": "^0.0.1-security",
+    "pip": "^0.0.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.15",
+    "@nomicfoundation/hardhat-ignition": "^3.1.8",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.7",
+    "@types/chai": "^5.2.3",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.20.1",
+    "chai": "^6.2.2",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.13.0",
+    "mocha": "^11.8.0",
+    "nodemon": "^3.1.14",
+    "typescript": "~6.0.3"
+  }
+}

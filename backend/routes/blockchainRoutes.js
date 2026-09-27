@@ -1,0 +1,12 @@
+const express = require("express");
+const authMiddleware = require("../middleware/authMiddleware");
+const adminMiddleware = require("../middleware/adminMiddleware");
+const controller = require("../controllers/blockchainController");
+const router = express.Router();
+router.post("/claims/:claimId/store", authMiddleware, adminMiddleware, controller.storeClaimHash);
+router.get("/claims/:claimId/verify", authMiddleware, adminMiddleware, controller.verifyClaim);
+router.get("/claims/:claimId", authMiddleware, adminMiddleware, controller.getClaim);
+router.post("/predictions/:predictionId/store", authMiddleware, adminMiddleware, controller.storePredictionHash);
+router.get("/predictions/:predictionId/verify", authMiddleware, adminMiddleware, controller.verifyPrediction);
+router.get("/predictions/:predictionId", authMiddleware, adminMiddleware, controller.getPrediction);
+module.exports = router;
